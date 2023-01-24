@@ -1,0 +1,37 @@
+input {
+  padding: 10px;
+  max-height: 15px;
+  border-radius: 5px;
+  border: solid 0.2px rgba(128, 128, 128, 0.438);
+  color: var(--veryDarkViolet);
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+
+.form_button {
+  background-color: var(--veryDarkViolet);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container_form {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  margin: 10px 5%;
+  padding-top: 80px;
+}
+.inputHandler {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.inputHandler_threeComponent {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
