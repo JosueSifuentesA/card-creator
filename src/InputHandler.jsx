@@ -8,10 +8,9 @@ const InputHandler = ({
   nameInput,
   type = "text",
 }) => {
-  console.log(errors);
   const maxCharacter = parseInt(maxCharacterProp);
   const minCharacter = parseInt(minCharacterProp);
-  console.log(typeof maxCharacter);
+
   //console.log(typeof maxCharacterProp);
   return (
     <div className="inputHandler">

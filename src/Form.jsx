@@ -2,14 +2,14 @@ import { useForm } from "react-hook-form";
 import "./form.css";
 import InputHandler from "./InputHandler";
 
-const Form = () => {
+const Form = ({ dataFunction }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => dataFunction(data);
 
   const form = (
     <form className="container_form" onSubmit={handleSubmit(onSubmit)}>
