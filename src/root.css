@@ -116,6 +116,13 @@
   left: 40px;
 }
 
+.cardWhite_cardCVV {
+  color: white;
+  position: relative;
+  left: 210px;
+  top: 65px;
+}
+
 .container_formContainer {
   background-color: var(--lightGrayishViolet);
   width: 100%;
