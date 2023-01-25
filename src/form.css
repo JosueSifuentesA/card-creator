@@ -6,6 +6,11 @@ input {
   color: var(--veryDarkViolet);
 }
 
+input:focus {
+  outline: none;
+  border-color: rgb(96, 5, 148);
+}
+
 input::placeholder {
   opacity: 0.5;
 }

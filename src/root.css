@@ -16,114 +16,235 @@
   color: var(--veryDarkViolet);
 }
 
-.container {
-  width: 100%;
+@media (min-width: 1440px) {
+  .container {
+    width: 60%;
 
-  margin: 3vh auto;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+    margin: 3vh auto;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    /*gap: 40px;*/
+  }
+
+  .container_header {
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 900px;
+    display: flex;
+    align-content: center;
+  }
+
+  .container_cardContainer {
+    margin: auto;
+    position: relative;
+    left: 60px;
+  }
+
+  .cardContainer_cardFront {
+    background-image: url(./images/bg-card-front.png);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: -30px;
+    left: -10px;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .cardFront_circleContainer {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    align-items: center;
+  }
+
+  .cardFront_bigCircle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .cardFront_smallCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .textContainer_numberCard {
+    color: white;
+    margin: 10px auto;
+    letter-spacing: 5px;
+  }
+
+  .cardFront_textContainer {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .textContainer_data {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .data_name {
+    color: white;
+    font-size: 12px;
+    margin: 10px 20px;
+  }
+
+  .data_date {
+    color: white;
+    font-size: 12px;
+    margin: 10px 20px;
+  }
+
+  .cardContainer_cardWhite {
+    background-image: url(./images/bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0px;
+    left: 40px;
+  }
+
+  .cardWhite_cardCVV {
+    color: white;
+    position: relative;
+    left: 210px;
+    top: 65px;
+  }
+
+  .container_formContainer {
+    background-color: var(--lightGrayishViolet);
+    width: 40%;
+    margin: auto;
+  }
 }
 
-.container_header {
-  background-image: url("images/bg-main-mobile.png");
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-content: center;
-}
+@media (max-width: 1439px) {
+  .container {
+    width: 100%;
 
-.container_cardContainer {
-  margin: auto;
-}
+    margin: 3vh auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 
-.cardContainer_cardFront {
-  background-image: url(./images/bg-card-front.png);
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  position: relative;
-  top: 105px;
-  left: -10px;
-  z-index: 20;
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-  justify-content: center;
-}
+  .container_header {
+    background-image: url("images/bg-main-mobile.png");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-content: center;
+  }
 
-.cardFront_circleContainer {
-  display: flex;
-  gap: 10px;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  align-items: center;
-}
+  .container_cardContainer {
+    margin: auto;
+  }
 
-.cardFront_bigCircle {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 50%;
-}
+  .cardContainer_cardFront {
+    background-image: url(./images/bg-card-front.png);
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 105px;
+    left: -10px;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    justify-content: center;
+  }
 
-.cardFront_smallCircle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid white;
-}
+  .cardFront_circleContainer {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    align-items: center;
+  }
 
-.textContainer_numberCard {
-  color: white;
-  margin: 10px auto;
-  letter-spacing: 5px;
-}
+  .cardFront_bigCircle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
 
-.cardFront_textContainer {
-  display: flex;
-  flex-flow: column;
-}
+  .cardFront_smallCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
 
-.textContainer_data {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
+  .textContainer_numberCard {
+    color: white;
+    margin: 10px auto;
+    letter-spacing: 5px;
+  }
 
-.data_name {
-  color: white;
-  font-size: 12px;
-  margin: 10px 20px;
-}
+  .cardFront_textContainer {
+    display: flex;
+    flex-flow: column;
+  }
 
-.data_date {
-  color: white;
-  font-size: 12px;
-  margin: 10px 20px;
-}
+  .textContainer_data {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.cardContainer_cardWhite {
-  background-image: url(./images/bg-card-back.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  position: relative;
-  bottom: 130px;
-  left: 40px;
-}
+  .data_name {
+    color: white;
+    font-size: 12px;
+    margin: 10px 20px;
+  }
 
-.cardWhite_cardCVV {
-  color: white;
-  position: relative;
-  left: 210px;
-  top: 65px;
-}
+  .data_date {
+    color: white;
+    font-size: 12px;
+    margin: 10px 20px;
+  }
 
-.container_formContainer {
-  background-color: var(--lightGrayishViolet);
-  width: 100%;
+  .cardContainer_cardWhite {
+    background-image: url(./images/bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 130px;
+    left: 40px;
+  }
+
+  .cardWhite_cardCVV {
+    color: white;
+    position: relative;
+    left: 210px;
+    top: 65px;
+  }
+
+  .container_formContainer {
+    background-color: var(--lightGrayishViolet);
+    width: 100%;
+  }
 }
